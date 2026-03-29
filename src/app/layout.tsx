@@ -1,5 +1,39 @@
 import type { Metadata } from "next";
+import {
+  Cinzel,
+  Playfair_Display,
+  Inter,
+  JetBrains_Mono,
+} from "next/font/google";
 import "./globals.css";
+
+const cinzel = Cinzel({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "900"],
+  variable: "--font-cinzel",
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  variable: "--font-playfair",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-jetbrains",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Happy Birthday Lizzie",
@@ -12,20 +46,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="bg-bg-primary text-parchment antialiased">{children}</body>
+    <html
+      lang="en"
+      className={`${cinzel.variable} ${playfair.variable} ${inter.variable} ${jetbrains.variable}`}
+    >
+      <body className="bg-bg-primary text-parchment antialiased">
+        {children}
+      </body>
     </html>
   );
 }
