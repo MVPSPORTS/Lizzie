@@ -3,15 +3,16 @@ import { commandments } from "@/data/commandments";
 import { CommandmentLayout } from "@/components/commandments/CommandmentLayout";
 
 interface PageProps {
-  params: { number: string };
+  params: Promise<{ number: string }>;
 }
 
 export function generateStaticParams() {
   return commandments.map((c) => ({ number: String(c.number) }));
 }
 
-export function generateMetadata({ params }: PageProps) {
-  const num = parseInt(params.number, 10);
+export async function generateMetadata({ params }: PageProps) {
+  const { number: numStr } = await params;
+  const num = parseInt(numStr, 10);
   const commandment = commandments.find((c) => c.number === num);
   if (!commandment) return { title: "Not Found" };
 
@@ -21,8 +22,9 @@ export function generateMetadata({ params }: PageProps) {
   };
 }
 
-export default function CommandmentPage({ params }: PageProps) {
-  const num = parseInt(params.number, 10);
+export default async function CommandmentPage({ params }: PageProps) {
+  const { number: numStr } = await params;
+  const num = parseInt(numStr, 10);
   const commandment = commandments.find((c) => c.number === num);
 
   if (!commandment) notFound();

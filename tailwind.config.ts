@@ -25,10 +25,10 @@ const config: Config = {
         },
       },
       fontFamily: {
-        cinzel: ["Cinzel", "serif"],
-        playfair: ["Playfair Display", "serif"],
-        sans: ["Inter", "sans-serif"],
-        mono: ["JetBrains Mono", "monospace"],
+        cinzel: ["var(--font-cinzel)", "serif"],
+        playfair: ["var(--font-playfair)", "serif"],
+        sans: ["var(--font-inter)", "sans-serif"],
+        mono: ["var(--font-jetbrains)", "monospace"],
       },
       animation: {
         shimmer: "shimmer 2s infinite",
