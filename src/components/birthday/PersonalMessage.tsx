@@ -33,13 +33,22 @@ export function PersonalMessage() {
             <div className="gold-divider w-20 mb-8" />
 
             <div className="space-y-6 font-playfair italic text-parchment-muted text-lg md:text-xl leading-relaxed">
-              <p>Tonight, you hold something I built just for you.</p>
+              <p className="text-parchment font-normal not-italic text-2xl md:text-3xl leading-snug">
+                Happy 29th Birthday, my princess.
+              </p>
 
               <p>
-                Not a card. Not flowers. Something far more powerful — a guide
-                to one of the most important technologies of our time, written
-                by someone who&apos;s spent years living inside it, shaped
-                specifically for you.
+                Here&apos;s to a future of automating work and making your life
+                less stressful. The greatest gift of them all was created by a
+                machine, not by me — I only guided the direction. And you can
+                too, with what is to come.
+              </p>
+
+              <p>
+                Tonight, you hold something built just for you. Not a card. Not
+                flowers. Something far more powerful — a guide to one of the
+                most important technologies of our time, shaped specifically for
+                you.
               </p>
 
               <p>
@@ -60,14 +69,8 @@ export function PersonalMessage() {
 
             {/* Signature */}
             <div className="mt-10 pt-8 border-t border-gold-dim border-opacity-30">
-              <p className="font-playfair italic text-parchment-muted text-base">
-                Happy birthday, Lizzie.
-              </p>
               <p className="font-playfair text-gold-primary text-xl mt-2">
-                With love, <span className="font-bold">[YOUR NAME]</span>
-              </p>
-              <p className="font-cinzel text-gold-dim text-xs tracking-widest mt-1 opacity-50">
-                ← Replace with your name before showing Lizzie
+                With love, <span className="font-bold">Fergus</span> 🤍
               </p>
             </div>
 
