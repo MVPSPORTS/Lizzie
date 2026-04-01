@@ -25,8 +25,8 @@ export const commandments: Commandment[] = [
   {
     number: 1,
     romanNumeral: "I",
-    title: "Know Your Platforms",
-    subtitle: "Choose the right tool for the right task",
+    title: "Utilise Your Current Stack",
+    subtitle: "Five categories. One tool wins each one.",
     iconName: "layers",
     level: 2,
     status: "complete",
@@ -34,44 +34,63 @@ export const commandments: Commandment[] = [
       {
         name: "Perplexity",
         color: "#20B2AA",
-        description: "Research & deep investigation",
+        description: "Research",
       },
       {
-        name: "Claude",
+        name: "Claude Sonnet 4.6",
         color: "#C9A84C",
-        description: "General use & natural language",
+        description: "Drafting",
       },
       {
         name: "Grok",
         color: "#1DA1F2",
-        description: "Less restricted creative content",
+        description: "Image & creative",
       },
       {
         name: "Make",
         color: "#9B59B6",
-        description: "Automation workflows",
+        description: "Automation",
+      },
+      {
+        name: "Claude Code",
+        color: "#E5C97E",
+        description: "Value creation",
+      },
+      {
+        name: "Lovable",
+        color: "#FF6B6B",
+        description: "Value creation",
+      },
+      {
+        name: "OpenClaw",
+        color: "#FF4500",
+        description: "Agentic work (Anthropic)",
       },
     ],
     sections: [
       {
         heading: "The Platform Principle",
-        body: "Not all AI platforms are equal. Each one has a superpower — a specific domain where it outperforms everything else. Using just one platform for everything is like using a hammer for every job. The professionals use the right tool at the right moment.",
+        body: "Not all AI platforms are equal. Each one has a superpower — a specific domain where it outperforms everything else. The professionals don't use one tool for everything. They map their tasks to the right platform and move between them fluidly. Here are the five categories you need to own.",
       },
       {
         heading: "Research → Perplexity",
-        body: "When you need to investigate something, find facts, compare options, or go deep on a topic — use Perplexity. Set it to Sonar Pro with Deep Research mode. Define your search windows. This is your intelligence engine. It searches the web in real-time and synthesises findings instead of guessing.",
+        body: "For research: always Perplexity. Use Sonar Pro with Deep Research mode switched on. Think brand reports, competitive analysis, deep research, fact-finding. It searches the web in real-time and synthesises findings rather than hallucinating answers. This is your intelligence engine.",
       },
       {
-        heading: "General Use → Claude",
-        body: "Claude Sonnet 4.6 is by far the most natural language model available today. It writes like a human, reasons clearly, and handles everything from drafting emails to analysing documents. Default to Claude for everyday creative and analytical tasks.",
+        heading: "Drafting → Claude Sonnet 4.6",
+        body: "Claude Sonnet 4.6 is by far the most natural language model available. It writes like a human, reasons clearly, and handles everything from drafting emails to analysing documents. For any written output — copy, strategy, replies, reports — default to Claude.",
       },
       {
-        heading: "Creative Freedom → Grok",
-        body: "Grok has significantly less regulatory restriction on the content it can generate. When you need bold, unrestricted creative output — edgy copy, unconventional ideas, content that other models would refuse — this is your tool.",
+        heading: "Image → Grok",
+        body: "For image generation, Grok is preferred. It has significantly less regulatory restriction on the content it can produce — giving you more creative freedom, bolder visuals, and fewer refusals compared to other platforms. When other models say no, Grok says yes.",
       },
       {
         heading: "Automation → Make",
-        body: "Make (formerly Integromat) is preferred over Zapier for building automated workflows. Fewer tokens, a cleaner UI, and more powerful multi-step logic. When you want AI-triggered processes that run without you — Make is where it happens.",
+        body: "Make (formerly Integromat) is preferred over Zapier for automation. Fewer tokens consumed, a cleaner interface, and more powerful multi-step branching logic. Build your workflows in Make. Use Zapier only for the simplest direct app-to-app connections.",
+      },
+      {
+        heading: "Value Creation → Claude Code · Lovable · OpenClaw",
+        body: "This is where AI becomes a builder, not just a talker. Claude Code lets you ship real software in a single session. Lovable builds full web apps from a description. OpenClaw — Anthropic's agentic product — is the next frontier: AI that works autonomously across your tools. Anthropic is leading this category and it is where the biggest leverage lives.",
       },
     ],
   },
@@ -108,23 +127,23 @@ export const commandments: Commandment[] = [
     sections: [
       {
         heading: "Why Models Matter",
-        body: "Every LLM platform offers a selection of models. The model you choose determines both the quality of your output and the cost. Think before you select — using the most powerful model for every task is like flying a jumbo jet to the corner shop.",
+        body: "Every LLM has a selection of models to use. The way you use that model is super important for the output. The output will change per model and the cost will fluctuate. You need to think about the output before you ask the question — this will determine the role. The decision framework is simple: define the output first, then pick the model.",
       },
       {
-        heading: "Long & Technical Tasks → Opus 4.6",
-        body: "For complex, multi-step reasoning and deep technical work — strategy documents, code architecture, long-form analysis — use Opus 4.6 or reasoning models like o3 and Gemini 2.5 Pro. These think harder, take longer, and cost more. Worth it for the right task.",
+        heading: "Quick Response → Haiku 4.5  ·  $",
+        body: "Brief, sharp, fast. Lowest cost. Use for simple questions, quick lookups, snappy replies, and anything where speed matters more than depth. Example prompt: 'What does API stand for?' Don't reach for a sledgehammer when a tap will do.",
       },
       {
-        heading: "Everyday Tasks → Sonnet 4.6",
-        body: "Your daily workhorse. Claude Sonnet 4.6 is fast, capable, and cost-effective for general use — drafting, ideation, summaries, replies, research synthesis. Also strong alternatives: Gemini Pro and GPT for variety across platforms.",
+        heading: "Everyday Task → Sonnet 4.6 · Gemini 2.5 · GPT-4o  ·  $$",
+        body: "Draft, reply, brainstorm. Balanced cost and quality. This is your daily workhorse for the vast majority of tasks — emails, copy, summaries, ideation, research synthesis. Claude Sonnet 4.6 leads this tier. Example prompt: 'Draft my follow-up email to the client.'",
       },
       {
-        heading: "Quick Responses → Haiku 4.5",
-        body: "When you need speed over depth — simple questions, quick formatting, rapid first drafts, snappy replies — use Haiku. Don't reach for a sledgehammer when a tap will do.",
+        heading: "Long / Technical → Opus 4.6 · o3  ·  $$$",
+        body: "Code, build, analyse. Highest quality, highest cost. Use for complex multi-step reasoning, strategy documents, code architecture, deep technical analysis, or anything where getting it exactly right matters. Example prompt: 'Build the full dashboard with data connected.' Think output first — then pick the model.",
       },
       {
-        heading: "The Golden Rule",
-        body: "Think about the output you want before you ask. What is the task? How complex is it? What's the format? This determines your model, your platform, and your prompt strategy. Thinking first saves time and money.",
+        heading: "The Decision Rule",
+        body: "Cost and power scale with complexity. Start by asking: what do I actually need from this? Quick and simple → Haiku. Everyday work → Sonnet. Deep and technical → Opus or o3. This single habit — thinking before prompting — will save you money and dramatically improve your outputs.",
       },
     ],
   },
@@ -132,31 +151,37 @@ export const commandments: Commandment[] = [
     number: 3,
     romanNumeral: "III",
     title: "How You Prompt Matters",
-    subtitle: "Speak to it. Guide it. Get more.",
+    subtitle: "Don't type. Speak. Guide. Steer.",
     iconName: "mic",
     level: 2,
     status: "complete",
-    tools: [],
+    tools: [
+      {
+        name: "Flow",
+        color: "#C084FC",
+        description: "Voice-to-text dictation for prompting",
+      },
+    ],
     sections: [
       {
-        heading: "The Prompting Gap",
-        body: "Context windows are getting bigger. LLMs can now process entire projects, hundreds of pages, full document sets — all in a single conversation. But most people still type short, vague prompts and wonder why the output misses the mark.",
+        heading: "Move Away From This",
+        body: "Most people open a new session every time, type out a short vague prompt, and wonder why the output is average. 'Claude, automate my job. Make no mistakes.' That's not a prompt — that's a wish. The way you communicate with AI is the single biggest lever on the quality of what you get back.",
       },
       {
-        heading: "Use Dictation",
-        body: "Everyone should be using voice dictation to prompt. Research consistently shows we miss 20–30% of our context and nuance when typing versus speaking. Your voice carries tone, emphasis, and detail that your fingers don't. Open your phone, hit dictate, and speak your prompt naturally.",
+        heading: "The Context Window Opportunity",
+        body: "Context windows are getting bigger. LLMs can now understand more about the conversation and process vastly more information in a single session. Most of us are barely using 1% of that capacity — typing short, thoughtless prompts in a new session every time.",
+      },
+      {
+        heading: "Stop Typing. Start Speaking.",
+        body: "Everyone should be using dictation to speak and prompt. Naturally, we miss out 20–30% of context when typing versus speaking. Your voice carries nuance, tone, and detail your fingers simply don't. The tool: use Flow — a voice-to-text AI that turns speech into clear, polished writing in every app. Available on Mac, Windows, iPhone and Android. Don't type, just speak.",
       },
       {
         heading: "Give a Goal, Not Just a Task",
-        body: "Don't just describe what you want — describe why you want it and what success looks like. Tell the AI who the output is for, what tone it should take, and what it should avoid. Direction is everything. Steering produces results; typing produces drafts.",
+        body: "You have to give a goal and steer it forward. Don't just describe the task — describe the outcome. Who is this for? What does success look like? What should it avoid? Direction is everything. Steering produces results; typing one-liners produces mediocrity.",
       },
       {
-        heading: "Context is King",
-        body: "The more context you provide — background, constraints, examples, tone, audience — the more precise the output. Treat the AI as a brilliant new hire who knows nothing about your world yet. You wouldn't send a new team member into a meeting without a briefing. Don't do it with AI either.",
-      },
-      {
-        heading: "The Prompt Formula",
-        body: "Role → Task → Context → Format → Constraints. Give the AI a role ('You are a senior sports marketing strategist'), define the task clearly, provide context, specify format (bullet points, email, 200 words), and state any constraints (no jargon, formal tone). This structure alone will transform your outputs.",
+        heading: "The Three-Part Framework",
+        body: "Every great prompt has three parts — in this order. First: Context & Identity — who are you, and what is it you're working on? Why are you here asking? Second: Brief — ask questions, build a brief, what are you looking for and trying to achieve? Third: CTA & Goal — what is the end goal and call to action for the model? What would success look like? Speak all three out loud using Flow. This structure turns average outputs into exceptional ones.",
       },
     ],
   },
@@ -164,31 +189,31 @@ export const commandments: Commandment[] = [
     number: 4,
     romanNumeral: "IV",
     title: "Give Your AI a Soul",
-    subtitle: "Name it. Shape it. Own it.",
+    subtitle: "Name it. Shape it. Layer it. Own it.",
     iconName: "sparkles",
     level: 3,
     status: "complete",
     tools: [],
     sections: [
       {
-        heading: "Beyond Default Settings",
-        body: "Every major AI model has areas of customisation where you can permanently tailor how it thinks, responds, and prioritises. Don't use defaults — define your AI's identity before you use it. This is the difference between a generic assistant and a tool that works the way you think.",
+        heading: "Every Model Has Customisation",
+        body: "Every model has areas of customisation where you can tailor the quality of output and how it 'thinks'. Give it a name and an identity — give more details so it can respond how you want to. The more you guide, the more you get in return.",
       },
       {
-        heading: "Give It a Name and Identity",
-        body: "Give your AI assistant a name. Define its personality, its expertise, its tone of voice. Tell it what it cares about and how it behaves under pressure. The more specific you are, the more it becomes an extension of your thinking rather than a generic language model.",
+        heading: "Static Layer — Set by You",
+        body: "The static layer is what you define upfront and it doesn't change between sessions. It has two parts: soul.md — personality and tone, how it thinks and speaks. And agents.md — rules and guardrails, workflow and permissions. Plus tools: APIs, search, and code access. This is the foundation you build once.",
       },
       {
-        heading: "Use .md System Prompts",
-        body: "Write a persistent system prompt — a CLAUDE.md file, a custom instructions block, or equivalent — that defines everything about how your AI should behave across every conversation. This becomes its personality, its memory of your preferences, and its operating manual.",
+        heading: "Dynamic Layer — Updated by Use",
+        body: "The dynamic layer evolves as you use the AI. user.md holds your name, role, preferences, timezone, and goals. memory.md stores learned context — past decisions, facts it has picked up about you and your work. This layer updates automatically with use, meaning the longer you work with a well-configured AI, the better it gets.",
       },
       {
-        heading: "What to Include",
-        body: "Your role. Your industry. Your tone of voice. Your writing style. What you never want it to say. How you want information formatted. What you care about most. The more you put in, the more you get back. Think of it as writing the perfect job description for your most important hire.",
+        heading: "The LLM Synthesises All Layers",
+        body: "When you send a prompt, the LLM synthesises every layer simultaneously: your soul.md, agents.md, user.md, memory.md, available tools, and your live input. The response you get is shaped by all of them. A poorly configured AI has almost nothing to work with. A well-configured one feels like it knows you.",
       },
       {
         heading: "The Result",
-        body: "An AI with a soul responds differently. It stays in character. It mirrors your communication style. It produces outputs that sound like someone you'd actually want to work with — not a generic machine trying to please everyone at once.",
+        body: "An AI with a soul responds differently. It stays in character. It mirrors your communication style. It remembers your preferences across sessions. It produces outputs that sound like someone you'd actually want to work with — not a generic machine trying to please everyone at once.",
       },
     ],
   },
@@ -228,7 +253,7 @@ export const commandments: Commandment[] = [
     number: 6,
     romanNumeral: "VI",
     title: "Create Project Masters",
-    subtitle: "Build hyper-focused AI workspaces for every client",
+    subtitle: "Identities squared — hyper-focused AI for every client",
     iconName: "folder-open",
     level: 3,
     status: "complete",
@@ -256,24 +281,24 @@ export const commandments: Commandment[] = [
     ],
     sections: [
       {
-        heading: "From CustomGPTs to Projects",
-        body: "It started with CustomGPTs — private file systems that upload everything you know about a client, a brand, or a topic, training the LLM to be hyper-focused on that one area. That concept has now expanded across every major platform.",
+        heading: "Identities Squared",
+        body: "Commandment IV gave your AI a soul. This commandment takes it further. A Project Master is a soul built specifically for one client, one brand, or one area of work — trained on everything you know about it. Identity on top of identity. The result is an AI that doesn't just know you; it knows your client as well as you do.",
       },
       {
-        heading: "Projects Across Every Platform",
-        body: "Claude Projects, Gemini Gems, GPT CustomGPTs, Perplexity Spaces. Each platform has its own version of the same idea: a persistent, private workspace where AI knows exactly who it's working for. Use them for every key client and project area — don't work from a blank slate every time.",
+        heading: "Where It Started — CustomGPTs",
+        body: "This all started with CustomGPTs where you can create file systems that upload everything you know about X for the LLM to be trained and hyper-focused on one project. That idea unlocked something fundamental: an AI that knows the specific context of your work, not just general knowledge.",
+      },
+      {
+        heading: "Now on Every Platform",
+        body: "Now with Claude, Gemini, GPT and more you can create hyper-focused areas of work to focus in. These are in the forms of Projects (Claude), Gems (Gemini), GPTs (OpenAI), and Spaces (Perplexity). Every major platform has a version of this. Use all of them.",
       },
       {
         heading: "What to Upload",
-        body: "Brand guidelines. Past work examples. Tone-of-voice documents. Strategy decks. Meeting notes. Key contacts and their preferences. The more it knows about the context, the better every single output becomes. Treat it like onboarding a new team member — give them everything.",
-      },
-      {
-        heading: "One Project Per Client",
-        body: "Create a dedicated project master for every major client or area of work. Name it. Give it a custom identity (see Commandment IV). Upload all relevant context. This becomes your AI coworker who knows everything about that client — and never forgets, never needs re-briefing.",
+        body: "Brand guidelines. Tone-of-voice documents. Past campaigns and work examples. Strategy decks. Meeting notes. Key contacts and their communication preferences. The more context you give it, the better every single output becomes. Treat it like the most thorough onboarding you've ever done.",
       },
       {
         heading: "The Compound Effect",
-        body: "The longer you maintain a well-built project, the more powerful it becomes. Every conversation adds context. Every corrected output teaches it your preferences. Over weeks and months, your project masters become extraordinarily accurate — a genuine competitive advantage.",
+        body: "The longer you maintain a well-built project, the more accurate it becomes. Every conversation adds context. Every corrected output teaches it your preferences. Over weeks and months, your project masters become an unfair advantage — an AI coworker who knows the client as well as you do, available instantly, at any time.",
       },
     ],
   },
@@ -300,7 +325,7 @@ export const commandments: Commandment[] = [
     sections: [
       {
         heading: "The Next Frontier",
-        body: "Anthropic is leading the way for innovation across AI. Their Cowork product — codenamed OpenClaw internally — is their most ambitious bet. Multi-agent collaboration. AI coworkers who operate in parallel, each with a defined role, each executing tasks simultaneously.",
+        body: "As you can tell, Anthropic is leading the way for innovation across AI. Cowork — codenamed OpenClaw internally — is their holy grail. In my eyes, they will dominate the market with this product. Multi-agent collaboration. AI coworkers who operate in parallel, each with a defined role, each executing tasks simultaneously.",
       },
       {
         heading: "What is Cowork?",
@@ -316,7 +341,7 @@ export const commandments: Commandment[] = [
       },
       {
         heading: "Start Here",
-        body: "If there is one thing to take from this entire guide: download Claude. Start using Cowork. This is the product that will define the next era of knowledge work. The people who are using it now are building an advantage that will compound for years.",
+        body: "If there is one thing you leave from today: download Claude. Start using Cowork to enhance your productivity. This is the product that will define the next era of knowledge work. The people who are using it now are building an advantage that will compound for years.",
       },
     ],
   },
@@ -329,6 +354,11 @@ export const commandments: Commandment[] = [
     level: 3,
     status: "complete",
     tools: [
+      {
+        name: "Claude",
+        color: "#C9A84C",
+        description: "Native scheduled tasks",
+      },
       {
         name: "Make",
         color: "#9B59B6",
@@ -350,12 +380,12 @@ export const commandments: Commandment[] = [
         body: "Make is preferred over Zapier — fewer tokens, cleaner interface, and more powerful multi-step logic with better error handling. Use Make for complex, multi-branch automations. Zapier for simpler, direct app-to-app integrations where speed of setup matters most.",
       },
       {
-        heading: "What to Automate First",
-        body: "Start with what wastes the most of your time. Repetitive reporting. Follow-up emails. Data entry between systems. Content distribution across channels. Meeting notes to action items. Social monitoring to inbox. If you do it repeatedly, automate it.",
+        heading: "Claude Scheduled Tasks",
+        body: "Claude has a native Scheduled Tasks feature — you give it a set of instructions and a recurring time, and it runs automatically without you lifting a finger. Two real examples from my own workflow: a 'Sports Sponsorship Digest' that fires every Monday, Wednesday, and Friday at 8am, researches the latest brand sponsorship activity across sports, and delivers a polished briefing. And an 'AI MVP Sports Digest' at 8:15am the same days — tracking AI and sports tech news relevant to product development. Set it up once. It runs forever.",
       },
       {
-        heading: "AI in the Loop",
-        body: "The real power comes when you put AI inside your automation. Not just moving data — but having an AI transform, summarise, classify, or generate content as part of the workflow. A Make scenario that pulls data, runs it through Claude, and delivers a polished briefing to your inbox every morning.",
+        heading: "The Mothership",
+        body: "In Make, the Mothership is a workflow that starts from a Google Sheet of target brands, runs each one through Perplexity AI twelve times — each search answering a different strategic question (sponsorship history, brand ethics, US marketing strategy, sports collaborations, recent news, tennis involvement) — then writes all the results back into the sheet. What used to take a team of researchers a week now runs overnight. The output: a complete brand intelligence file for every prospect, ready before the first meeting.",
       },
       {
         heading: "Level 3 Thinking",
@@ -367,15 +397,15 @@ export const commandments: Commandment[] = [
     number: 9,
     romanNumeral: "IX",
     title: "Build Without Code",
-    subtitle: "Ideas into products — no developer required",
+    subtitle: "Ship products with nothing but a description",
     iconName: "wand-2",
     level: 4,
-    status: "placeholder",
+    status: "complete",
     tools: [
       {
         name: "Lovable",
         color: "#FF6B6B",
-        description: "AI-powered app builder",
+        description: "Full web apps from a description",
       },
       {
         name: "Bolt",
@@ -384,41 +414,88 @@ export const commandments: Commandment[] = [
       },
       {
         name: "v0",
-        color: "#000000",
+        color: "#888888",
         description: "UI component generation",
       },
     ],
     sections: [
       {
-        heading: "Coming Soon",
-        body: "This commandment is being written. Content and detail will be added shortly. The focus: how to build real products, tools, and internal apps using AI-powered builders — without writing a single line of code.",
+        heading: "The No-Code Revolution",
+        body: "There is a category of AI tools that turns a plain-English description into a fully working application — design, logic, database, and all. You do not write a single line of code. You describe what you want. You click build. You get a product. This is not a prototype or a mockup. It is a live, deployable application.",
+      },
+      {
+        heading: "Lovable",
+        body: "Lovable is the leading no-code AI builder. Describe your app — the features, the design, the data it needs to handle — and Lovable builds the entire thing: frontend, backend, database connections. Need to change something? Describe the change in plain English. It updates in real time. A fully functional SaaS product, internal tool, or client-facing app can be live in under an hour.",
+      },
+      {
+        heading: "What to Build",
+        body: "Internal tools that your business actually needs. Client-facing dashboards. Lead capture forms connected to your CRM. Data visualisation tools. Custom reporting apps. Anything you have been waiting for a developer to build — and a developer has never quite had the time. The queue is gone. The bottleneck is gone. You are the developer now.",
+      },
+      {
+        heading: "The Shift in Thinking",
+        body: "The mistake most people make is thinking they need to learn to code before they can build things. They do not. The new skill is knowing what to build and being able to describe it clearly — which is exactly what Commandments III and V taught you. Prompting is programming. This is what Level 4 looks like.",
+      },
+      {
+        heading: "From Consumer to Creator",
+        body: "For most of AI's short history, most people have used it as a consumer — asking questions, getting answers. Level 4 is when you flip. You become a creator. You use AI to build things that other people use. Products. Tools. Businesses. That is the frontier. And it is open to you right now.",
       },
     ],
   },
   {
     number: 10,
     romanNumeral: "X",
-    title: "Build With Code",
-    subtitle: "Level 4: where ideas become reality",
+    title: "Vibe Coding",
+    subtitle: "Anything is possible",
     iconName: "code-2",
     level: 4,
-    status: "placeholder",
+    status: "complete",
     tools: [
       {
         name: "Claude Code",
         color: "#C9A84C",
-        description: "AI-powered CLI coding",
+        description: "AI-powered CLI coding agent",
       },
       {
-        name: "Cursor",
-        color: "#4FC3F7",
-        description: "AI-powered IDE",
+        name: "Lovable",
+        color: "#FF6B6B",
+        description: "Web apps from a description",
+      },
+      {
+        name: "Codex",
+        color: "#10A37F",
+        description: "OpenAI coding agent",
+      },
+      {
+        name: "GitHub",
+        color: "#6E5494",
+        description: "Version control",
+      },
+      {
+        name: "Vercel",
+        color: "#000000",
+        description: "Instant deployment",
       },
     ],
     sections: [
       {
-        heading: "Coming Soon",
-        body: "This commandment is being written. Content and detail will be added shortly. The focus: Claude Code, Cursor, and the tools that let anyone — regardless of coding background — build and ship real software using AI as their engineering partner.",
+        heading: "What Is Vibe Coding?",
+        body: "Vibe coding is the name for what happens when you describe what you want in plain language — and AI builds it. No degree. No years of experience. No writing syntax from scratch. You bring the vision; the AI brings the engineering. The tools to do this exist right now and they are extraordinary.",
+      },
+      {
+        heading: "Real Example 1 — Sports Venue Intelligence Dashboard",
+        body: "Prompt: 'Create me a live dashboard of all sports venues that are relevant in the world, and keep updating live the changes in the stadium — ticket pricing, hospitality offerings, season tickets, partnership and sponsorship models, inventory, how much they cost to build, what are they expanding. Also look at relevant news from the stadiums on the dashboard, then follow market trends and feedback. Add in a search feature where we can run a search on a venue and it will pull all the relevant information. The context is that we work on sports venues doing their valuation models and this is key to understand the competitive landscape.' Build time: 7 minutes.",
+      },
+      {
+        heading: "Real Example 2 — Stadium Deal Comps Website",
+        body: "Prompt: 'Use the Inter Miami-Nu Stadium deal and the Seahawks sale process as anchor points. Pull the last 10 years of major U.S. stadium naming-rights agreements, franchise sales, and minority-stake transactions across NFL, NBA, MLB, NHL, and MLS. Build a valuation model that shows what a sponsor should pay for naming rights and what an investor should pay for control or minority ownership after adjusting for media rights, market size, venue age, superstar effect, and adjacent real-estate development. Deploy it as an interactive sports-deal comps website.' Build time: 5 minutes.",
+      },
+      {
+        heading: "The Tools",
+        body: "Claude Code is the most capable coding agent available — it works inside your terminal, reads your entire codebase, and ships real software in a single session. This website was built entirely with it. Lovable builds full web apps from a plain-English description, no code required. Codex is OpenAI's equivalent. GitHub stores your code. Vercel deploys it live in seconds. The entire stack for building and shipping a product is now accessible to anyone.",
+      },
+      {
+        heading: "Anything Is Possible",
+        body: "The gap between having an idea and having a working product used to be measured in months and hundreds of thousands of pounds. It is now measured in minutes. If you can describe it, you can build it. That is not a metaphor. That is where we are. The only question is: what will you build?",
       },
     ],
   },
