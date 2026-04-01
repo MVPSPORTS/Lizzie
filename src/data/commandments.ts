@@ -355,6 +355,11 @@ export const commandments: Commandment[] = [
     status: "complete",
     tools: [
       {
+        name: "Claude",
+        color: "#C9A84C",
+        description: "Native scheduled tasks",
+      },
+      {
         name: "Make",
         color: "#9B59B6",
         description: "Complex workflow automation",
@@ -375,12 +380,12 @@ export const commandments: Commandment[] = [
         body: "Make is preferred over Zapier — fewer tokens, cleaner interface, and more powerful multi-step logic with better error handling. Use Make for complex, multi-branch automations. Zapier for simpler, direct app-to-app integrations where speed of setup matters most.",
       },
       {
-        heading: "Scheduled Tasks",
-        body: "The most powerful automation is one that runs without any trigger from you. Scheduled tasks are recurring AI-powered workflows that fire on a timer — daily, weekly, whenever you need them. A real example: a 'Sports Sponsorship Digest' that runs every morning, pulls the latest industry news via Perplexity, synthesises it through Claude, and delivers a polished briefing to your inbox before you've opened your eyes. You set it up once. It works forever.",
+        heading: "Claude Scheduled Tasks",
+        body: "Claude has a native Scheduled Tasks feature — you give it a set of instructions and a recurring time, and it runs automatically without you lifting a finger. Two real examples from my own workflow: a 'Sports Sponsorship Digest' that fires every Monday, Wednesday, and Friday at 8am, researches the latest brand sponsorship activity across sports, and delivers a polished briefing. And an 'AI MVP Sports Digest' at 8:15am the same days — tracking AI and sports tech news relevant to product development. Set it up once. It runs forever.",
       },
       {
-        heading: "AI in the Loop",
-        body: "The real power comes when you put AI inside your automation. Not just moving data — but having an AI transform, summarise, classify, or generate content as part of the workflow. A Make scenario that pulls data, runs it through Claude, and delivers a polished briefing to your inbox every morning. This is the 'Mothership' model: one master workflow that orchestrates multiple AI agents, each handling a different source or output, all running in parallel.",
+        heading: "The Mothership",
+        body: "In Make, the Mothership is a workflow that starts from a Google Sheet of target brands, runs each one through Perplexity AI twelve times — each search answering a different strategic question (sponsorship history, brand ethics, US marketing strategy, sports collaborations, recent news, tennis involvement) — then writes all the results back into the sheet. What used to take a team of researchers a week now runs overnight. The output: a complete brand intelligence file for every prospect, ready before the first meeting.",
       },
       {
         heading: "Level 3 Thinking",
@@ -392,15 +397,15 @@ export const commandments: Commandment[] = [
     number: 9,
     romanNumeral: "IX",
     title: "Build Without Code",
-    subtitle: "Ideas into products — no developer required",
+    subtitle: "Ship products with nothing but a description",
     iconName: "wand-2",
     level: 4,
-    status: "placeholder",
+    status: "complete",
     tools: [
       {
         name: "Lovable",
         color: "#FF6B6B",
-        description: "AI-powered app builder",
+        description: "Full web apps from a description",
       },
       {
         name: "Bolt",
@@ -409,41 +414,88 @@ export const commandments: Commandment[] = [
       },
       {
         name: "v0",
-        color: "#000000",
+        color: "#888888",
         description: "UI component generation",
       },
     ],
     sections: [
       {
-        heading: "Coming Soon",
-        body: "This commandment is being written. Content and detail will be added shortly. The focus: how to build real products, tools, and internal apps using AI-powered builders — without writing a single line of code.",
+        heading: "The No-Code Revolution",
+        body: "There is a category of AI tools that turns a plain-English description into a fully working application — design, logic, database, and all. You do not write a single line of code. You describe what you want. You click build. You get a product. This is not a prototype or a mockup. It is a live, deployable application.",
+      },
+      {
+        heading: "Lovable",
+        body: "Lovable is the leading no-code AI builder. Describe your app — the features, the design, the data it needs to handle — and Lovable builds the entire thing: frontend, backend, database connections. Need to change something? Describe the change in plain English. It updates in real time. A fully functional SaaS product, internal tool, or client-facing app can be live in under an hour.",
+      },
+      {
+        heading: "What to Build",
+        body: "Internal tools that your business actually needs. Client-facing dashboards. Lead capture forms connected to your CRM. Data visualisation tools. Custom reporting apps. Anything you have been waiting for a developer to build — and a developer has never quite had the time. The queue is gone. The bottleneck is gone. You are the developer now.",
+      },
+      {
+        heading: "The Shift in Thinking",
+        body: "The mistake most people make is thinking they need to learn to code before they can build things. They do not. The new skill is knowing what to build and being able to describe it clearly — which is exactly what Commandments III and V taught you. Prompting is programming. This is what Level 4 looks like.",
+      },
+      {
+        heading: "From Consumer to Creator",
+        body: "For most of AI's short history, most people have used it as a consumer — asking questions, getting answers. Level 4 is when you flip. You become a creator. You use AI to build things that other people use. Products. Tools. Businesses. That is the frontier. And it is open to you right now.",
       },
     ],
   },
   {
     number: 10,
     romanNumeral: "X",
-    title: "Build With Code",
-    subtitle: "Level 4: where ideas become reality",
+    title: "Vibe Coding",
+    subtitle: "Anything is possible",
     iconName: "code-2",
     level: 4,
-    status: "placeholder",
+    status: "complete",
     tools: [
       {
         name: "Claude Code",
         color: "#C9A84C",
-        description: "AI-powered CLI coding",
+        description: "AI-powered CLI coding agent",
       },
       {
-        name: "Cursor",
-        color: "#4FC3F7",
-        description: "AI-powered IDE",
+        name: "Lovable",
+        color: "#FF6B6B",
+        description: "Web apps from a description",
+      },
+      {
+        name: "Codex",
+        color: "#10A37F",
+        description: "OpenAI coding agent",
+      },
+      {
+        name: "GitHub",
+        color: "#6E5494",
+        description: "Version control",
+      },
+      {
+        name: "Vercel",
+        color: "#000000",
+        description: "Instant deployment",
       },
     ],
     sections: [
       {
-        heading: "Coming Soon",
-        body: "This commandment is being written. Content and detail will be added shortly. The focus: Claude Code, Cursor, and the tools that let anyone — regardless of coding background — build and ship real software using AI as their engineering partner.",
+        heading: "What Is Vibe Coding?",
+        body: "Vibe coding is the name for what happens when you describe what you want in plain language — and AI builds it. No degree. No years of experience. No writing syntax from scratch. You bring the vision; the AI brings the engineering. The tools to do this exist right now and they are extraordinary.",
+      },
+      {
+        heading: "Real Example 1 — Sports Venue Intelligence Dashboard",
+        body: "Prompt: 'Create me a live dashboard of all sports venues that are relevant in the world, and keep updating live the changes in the stadium — ticket pricing, hospitality offerings, season tickets, partnership and sponsorship models, inventory, how much they cost to build, what are they expanding. Also look at relevant news from the stadiums on the dashboard, then follow market trends and feedback. Add in a search feature where we can run a search on a venue and it will pull all the relevant information. The context is that we work on sports venues doing their valuation models and this is key to understand the competitive landscape.' Build time: 7 minutes.",
+      },
+      {
+        heading: "Real Example 2 — Stadium Deal Comps Website",
+        body: "Prompt: 'Use the Inter Miami-Nu Stadium deal and the Seahawks sale process as anchor points. Pull the last 10 years of major U.S. stadium naming-rights agreements, franchise sales, and minority-stake transactions across NFL, NBA, MLB, NHL, and MLS. Build a valuation model that shows what a sponsor should pay for naming rights and what an investor should pay for control or minority ownership after adjusting for media rights, market size, venue age, superstar effect, and adjacent real-estate development. Deploy it as an interactive sports-deal comps website.' Build time: 5 minutes.",
+      },
+      {
+        heading: "The Tools",
+        body: "Claude Code is the most capable coding agent available — it works inside your terminal, reads your entire codebase, and ships real software in a single session. This website was built entirely with it. Lovable builds full web apps from a plain-English description, no code required. Codex is OpenAI's equivalent. GitHub stores your code. Vercel deploys it live in seconds. The entire stack for building and shipping a product is now accessible to anyone.",
+      },
+      {
+        heading: "Anything Is Possible",
+        body: "The gap between having an idea and having a working product used to be measured in months and hundreds of thousands of pounds. It is now measured in minutes. If you can describe it, you can build it. That is not a metaphor. That is where we are. The only question is: what will you build?",
       },
     ],
   },
