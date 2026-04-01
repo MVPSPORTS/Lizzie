@@ -59,10 +59,17 @@ body {
 
 /* Gold gradient text */
 .gold-text {
-  background: linear-gradient(135deg, #c9a84c, #e5c97e, #c9a84c);
+  background: linear-gradient(135deg, #8b7035 0%, #c9a84c 40%, #e5c97e 60%, #c9a84c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  background-size: 200% auto;
+}
+
+/* Smooth selection */
+::selection {
+  background: rgba(201, 168, 76, 0.25);
+  color: #f5f0e8;
 }
 
 /* Stone texture overlay */
