@@ -25,8 +25,8 @@ export const commandments: Commandment[] = [
   {
     number: 1,
     romanNumeral: "I",
-    title: "Know Your Platforms",
-    subtitle: "Choose the right tool for the right task",
+    title: "Utilise Your Current Stack",
+    subtitle: "Five categories. One tool wins each one.",
     iconName: "layers",
     level: 2,
     status: "complete",
@@ -34,44 +34,63 @@ export const commandments: Commandment[] = [
       {
         name: "Perplexity",
         color: "#20B2AA",
-        description: "Research & deep investigation",
+        description: "Research",
       },
       {
-        name: "Claude",
+        name: "Claude Sonnet 4.6",
         color: "#C9A84C",
-        description: "General use & natural language",
+        description: "Drafting",
       },
       {
         name: "Grok",
         color: "#1DA1F2",
-        description: "Less restricted creative content",
+        description: "Image & creative",
       },
       {
         name: "Make",
         color: "#9B59B6",
-        description: "Automation workflows",
+        description: "Automation",
+      },
+      {
+        name: "Claude Code",
+        color: "#E5C97E",
+        description: "Value creation",
+      },
+      {
+        name: "Lovable",
+        color: "#FF6B6B",
+        description: "Value creation",
+      },
+      {
+        name: "OpenClaw",
+        color: "#FF4500",
+        description: "Agentic work (Anthropic)",
       },
     ],
     sections: [
       {
         heading: "The Platform Principle",
-        body: "Not all AI platforms are equal. Each one has a superpower — a specific domain where it outperforms everything else. Using just one platform for everything is like using a hammer for every job. The professionals use the right tool at the right moment.",
+        body: "Not all AI platforms are equal. Each one has a superpower — a specific domain where it outperforms everything else. The professionals don't use one tool for everything. They map their tasks to the right platform and move between them fluidly. Here are the five categories you need to own.",
       },
       {
         heading: "Research → Perplexity",
-        body: "When you need to investigate something, find facts, compare options, or go deep on a topic — use Perplexity. Set it to Sonar Pro with Deep Research mode. Define your search windows. This is your intelligence engine. It searches the web in real-time and synthesises findings instead of guessing.",
+        body: "For research: always Perplexity. Use Sonar Pro with Deep Research mode switched on. Think brand reports, competitive analysis, deep research, fact-finding. It searches the web in real-time and synthesises findings rather than hallucinating answers. This is your intelligence engine.",
       },
       {
-        heading: "General Use → Claude",
-        body: "Claude Sonnet 4.6 is by far the most natural language model available today. It writes like a human, reasons clearly, and handles everything from drafting emails to analysing documents. Default to Claude for everyday creative and analytical tasks.",
+        heading: "Drafting → Claude Sonnet 4.6",
+        body: "Claude Sonnet 4.6 is by far the most natural language model available. It writes like a human, reasons clearly, and handles everything from drafting emails to analysing documents. For any written output — copy, strategy, replies, reports — default to Claude.",
       },
       {
-        heading: "Creative Freedom → Grok",
-        body: "Grok has significantly less regulatory restriction on the content it can generate. When you need bold, unrestricted creative output — edgy copy, unconventional ideas, content that other models would refuse — this is your tool.",
+        heading: "Image → Grok",
+        body: "For image generation, Grok is preferred. It has significantly less regulatory restriction on the content it can produce — giving you more creative freedom, bolder visuals, and fewer refusals compared to other platforms. When other models say no, Grok says yes.",
       },
       {
         heading: "Automation → Make",
-        body: "Make (formerly Integromat) is preferred over Zapier for building automated workflows. Fewer tokens, a cleaner UI, and more powerful multi-step logic. When you want AI-triggered processes that run without you — Make is where it happens.",
+        body: "Make (formerly Integromat) is preferred over Zapier for automation. Fewer tokens consumed, a cleaner interface, and more powerful multi-step branching logic. Build your workflows in Make. Use Zapier only for the simplest direct app-to-app connections.",
+      },
+      {
+        heading: "Value Creation → Claude Code · Lovable · OpenClaw",
+        body: "This is where AI becomes a builder, not just a talker. Claude Code lets you ship real software in a single session. Lovable builds full web apps from a description. OpenClaw — Anthropic's agentic product — is the next frontier: AI that works autonomously across your tools. Anthropic is leading this category and it is where the biggest leverage lives.",
       },
     ],
   },
@@ -108,23 +127,23 @@ export const commandments: Commandment[] = [
     sections: [
       {
         heading: "Why Models Matter",
-        body: "Every LLM platform offers a selection of models. The model you choose determines both the quality of your output and the cost. Think before you select — using the most powerful model for every task is like flying a jumbo jet to the corner shop.",
+        body: "Every LLM has a selection of models to use. The way you use that model is super important for the output. The output will change per model and the cost will fluctuate. You need to think about the output before you ask the question — this will determine the role. The decision framework is simple: define the output first, then pick the model.",
       },
       {
-        heading: "Long & Technical Tasks → Opus 4.6",
-        body: "For complex, multi-step reasoning and deep technical work — strategy documents, code architecture, long-form analysis — use Opus 4.6 or reasoning models like o3 and Gemini 2.5 Pro. These think harder, take longer, and cost more. Worth it for the right task.",
+        heading: "Quick Response → Haiku 4.5  ·  $",
+        body: "Brief, sharp, fast. Lowest cost. Use for simple questions, quick lookups, snappy replies, and anything where speed matters more than depth. Example prompt: 'What does API stand for?' Don't reach for a sledgehammer when a tap will do.",
       },
       {
-        heading: "Everyday Tasks → Sonnet 4.6",
-        body: "Your daily workhorse. Claude Sonnet 4.6 is fast, capable, and cost-effective for general use — drafting, ideation, summaries, replies, research synthesis. Also strong alternatives: Gemini Pro and GPT for variety across platforms.",
+        heading: "Everyday Task → Sonnet 4.6 · Gemini 2.5 · GPT-4o  ·  $$",
+        body: "Draft, reply, brainstorm. Balanced cost and quality. This is your daily workhorse for the vast majority of tasks — emails, copy, summaries, ideation, research synthesis. Claude Sonnet 4.6 leads this tier. Example prompt: 'Draft my follow-up email to the client.'",
       },
       {
-        heading: "Quick Responses → Haiku 4.5",
-        body: "When you need speed over depth — simple questions, quick formatting, rapid first drafts, snappy replies — use Haiku. Don't reach for a sledgehammer when a tap will do.",
+        heading: "Long / Technical → Opus 4.6 · o3  ·  $$$",
+        body: "Code, build, analyse. Highest quality, highest cost. Use for complex multi-step reasoning, strategy documents, code architecture, deep technical analysis, or anything where getting it exactly right matters. Example prompt: 'Build the full dashboard with data connected.' Think output first — then pick the model.",
       },
       {
-        heading: "The Golden Rule",
-        body: "Think about the output you want before you ask. What is the task? How complex is it? What's the format? This determines your model, your platform, and your prompt strategy. Thinking first saves time and money.",
+        heading: "The Decision Rule",
+        body: "Cost and power scale with complexity. Start by asking: what do I actually need from this? Quick and simple → Haiku. Everyday work → Sonnet. Deep and technical → Opus or o3. This single habit — thinking before prompting — will save you money and dramatically improve your outputs.",
       },
     ],
   },
@@ -132,31 +151,37 @@ export const commandments: Commandment[] = [
     number: 3,
     romanNumeral: "III",
     title: "How You Prompt Matters",
-    subtitle: "Speak to it. Guide it. Get more.",
+    subtitle: "Don't type. Speak. Guide. Steer.",
     iconName: "mic",
     level: 2,
     status: "complete",
-    tools: [],
+    tools: [
+      {
+        name: "Flow",
+        color: "#C084FC",
+        description: "Voice-to-text dictation for prompting",
+      },
+    ],
     sections: [
       {
-        heading: "The Prompting Gap",
-        body: "Context windows are getting bigger. LLMs can now process entire projects, hundreds of pages, full document sets — all in a single conversation. But most people still type short, vague prompts and wonder why the output misses the mark.",
+        heading: "Move Away From This",
+        body: "Most people open a new session every time, type out a short vague prompt, and wonder why the output is average. 'Claude, automate my job. Make no mistakes.' That's not a prompt — that's a wish. The way you communicate with AI is the single biggest lever on the quality of what you get back.",
       },
       {
-        heading: "Use Dictation",
-        body: "Everyone should be using voice dictation to prompt. Research consistently shows we miss 20–30% of our context and nuance when typing versus speaking. Your voice carries tone, emphasis, and detail that your fingers don't. Open your phone, hit dictate, and speak your prompt naturally.",
+        heading: "The Context Window Opportunity",
+        body: "Context windows are getting bigger. LLMs can now understand more about the conversation and process vastly more information in a single session. Most of us are barely using 1% of that capacity — typing short, thoughtless prompts in a new session every time.",
+      },
+      {
+        heading: "Stop Typing. Start Speaking.",
+        body: "Everyone should be using dictation to speak and prompt. Naturally, we miss out 20–30% of context when typing versus speaking. Your voice carries nuance, tone, and detail your fingers simply don't. The tool: use Flow — a voice-to-text AI that turns speech into clear, polished writing in every app. Available on Mac, Windows, iPhone and Android. Don't type, just speak.",
       },
       {
         heading: "Give a Goal, Not Just a Task",
-        body: "Don't just describe what you want — describe why you want it and what success looks like. Tell the AI who the output is for, what tone it should take, and what it should avoid. Direction is everything. Steering produces results; typing produces drafts.",
-      },
-      {
-        heading: "Context is King",
-        body: "The more context you provide — background, constraints, examples, tone, audience — the more precise the output. Treat the AI as a brilliant new hire who knows nothing about your world yet. You wouldn't send a new team member into a meeting without a briefing. Don't do it with AI either.",
+        body: "You have to give a goal and steer it forward. Don't just describe the task — describe the outcome. Who is this for? What does success look like? What should it avoid? Direction is everything. Steering produces results; typing one-liners produces mediocrity.",
       },
       {
         heading: "The Prompt Formula",
-        body: "Role → Task → Context → Format → Constraints. Give the AI a role ('You are a senior sports marketing strategist'), define the task clearly, provide context, specify format (bullet points, email, 200 words), and state any constraints (no jargon, formal tone). This structure alone will transform your outputs.",
+        body: "Role → Task → Context → Format → Constraints. Give the AI a role ('You are a senior sports marketing strategist'), define the task clearly, provide context, specify format (bullet points, email, 200 words), and state constraints (no jargon, formal tone). Speak this out loud rather than typing it. This structure alone will transform your outputs.",
       },
     ],
   },
