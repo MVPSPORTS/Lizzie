@@ -325,7 +325,7 @@ export const commandments: Commandment[] = [
     sections: [
       {
         heading: "The Next Frontier",
-        body: "Anthropic is leading the way for innovation across AI. Their Cowork product — codenamed OpenClaw internally — is their most ambitious bet. Multi-agent collaboration. AI coworkers who operate in parallel, each with a defined role, each executing tasks simultaneously.",
+        body: "As you can tell, Anthropic is leading the way for innovation across AI. Cowork — codenamed OpenClaw internally — is their holy grail. In my eyes, they will dominate the market with this product. Multi-agent collaboration. AI coworkers who operate in parallel, each with a defined role, each executing tasks simultaneously.",
       },
       {
         heading: "What is Cowork?",
@@ -341,7 +341,7 @@ export const commandments: Commandment[] = [
       },
       {
         heading: "Start Here",
-        body: "If there is one thing to take from this entire guide: download Claude. Start using Cowork. This is the product that will define the next era of knowledge work. The people who are using it now are building an advantage that will compound for years.",
+        body: "If there is one thing you leave from today: download Claude. Start using Cowork to enhance your productivity. This is the product that will define the next era of knowledge work. The people who are using it now are building an advantage that will compound for years.",
       },
     ],
   },
@@ -375,12 +375,12 @@ export const commandments: Commandment[] = [
         body: "Make is preferred over Zapier — fewer tokens, cleaner interface, and more powerful multi-step logic with better error handling. Use Make for complex, multi-branch automations. Zapier for simpler, direct app-to-app integrations where speed of setup matters most.",
       },
       {
-        heading: "What to Automate First",
-        body: "Start with what wastes the most of your time. Repetitive reporting. Follow-up emails. Data entry between systems. Content distribution across channels. Meeting notes to action items. Social monitoring to inbox. If you do it repeatedly, automate it.",
+        heading: "Scheduled Tasks",
+        body: "The most powerful automation is one that runs without any trigger from you. Scheduled tasks are recurring AI-powered workflows that fire on a timer — daily, weekly, whenever you need them. A real example: a 'Sports Sponsorship Digest' that runs every morning, pulls the latest industry news via Perplexity, synthesises it through Claude, and delivers a polished briefing to your inbox before you've opened your eyes. You set it up once. It works forever.",
       },
       {
         heading: "AI in the Loop",
-        body: "The real power comes when you put AI inside your automation. Not just moving data — but having an AI transform, summarise, classify, or generate content as part of the workflow. A Make scenario that pulls data, runs it through Claude, and delivers a polished briefing to your inbox every morning.",
+        body: "The real power comes when you put AI inside your automation. Not just moving data — but having an AI transform, summarise, classify, or generate content as part of the workflow. A Make scenario that pulls data, runs it through Claude, and delivers a polished briefing to your inbox every morning. This is the 'Mothership' model: one master workflow that orchestrates multiple AI agents, each handling a different source or output, all running in parallel.",
       },
       {
         heading: "Level 3 Thinking",
